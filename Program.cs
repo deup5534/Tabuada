@@ -1,20 +1,17 @@
-﻿Console.Write("\nínicio:");
-int numeroInicial = Convert.ToInt32(Console.ReadLine());
+﻿Console.ForegroundColor = ConsoleColor.DarkBlue;
 
-Console.Write("\nFim:");
-int numeroFinal = Convert.ToInt32(Console.ReadLine());
+Console.Write("Tabuada do número:");
 
-if (numeroFinal < numeroInicial)
+int tabu = Convert.ToInt32(Console.ReadLine());
+int ada = 0;
+int tabuada;
+
+while (ada <= 10)
+
 {
-    Console.WriteLine("mano... faz isso direito!");
+    tabuada = tabu * ada;
+    Console.WriteLine($"{tabu} x {ada} = {tabuada}");
+    ada +=1;
 }
-else
-{
-    while (numeroInicial <= numeroFinal)
-    {
-        numeroInicial += numeroInicial += numeroInicial += numeroInicial += numeroInicial += numeroInicial+= numeroInicial += numeroInicial += numeroInicial += numeroInicial;
-        Console.Write($"\n{numeroInicial} ");
-        
-    }
-}
-Console.WriteLine();
+
+Console.ResetColor();
